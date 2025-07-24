@@ -1,0 +1,1402 @@
+[
+  {
+    "id": 1,
+    "question": "What is the capital of Japan?",
+    "options": {
+      "A": "Kyoto",
+      "B": "Osaka",
+      "C": "Tokyo",
+      "D": "Hiroshima"
+    },
+    "answer": "C",
+    "explanation": "Tokyo is the bustling capital of Japan, known for its Imperial Palace, numerous shrines and temples, and modern skyscrapers.",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 2,
+    "question": "What gas do plants primarily absorb from the atmosphere for photosynthesis?",
+    "options": {
+      "A": "Oxygen",
+      "B": "Nitrogen",
+      "C": "Carbon Dioxide",
+      "D": "Hydrogen"
+    },
+    "answer": "C",
+    "explanation": "Plants use Carbon Dioxide ($CO_2$), water, and sunlight to create their food (glucose) and release oxygen as a byproduct.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 3,
+    "question": "In the movie 'The Lion King', what is the name of Simba's uncle?",
+    "options": {
+      "A": "Mufasa",
+      "B": "Zazu",
+      "C": "Timon",
+      "D": "Scar"
+    },
+    "answer": "D",
+    "explanation": "Scar is the main antagonist of 'The Lion King', the brother of Mufasa and uncle to Simba, whom he plots to overthrow.",
+    "category": "Pop Culture",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 4,
+    "question": "In which year did the Titanic sink on its maiden voyage?",
+    "options": {
+      "A": "1905",
+      "B": "1912",
+      "C": "1918",
+      "D": "1923"
+    },
+    "answer": "B",
+    "explanation": "The RMS Titanic sank in the early hours of April 15, 1912, after striking an iceberg in the North Atlantic Ocean.",
+    "category": "History",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 5,
+    "question": "What is the value of 'x' in the equation $2x + 10 = 20$?",
+    "options": {
+      "A": "10",
+      "B": "15",
+      "C": "5",
+      "D": "20"
+    },
+    "answer": "C",
+    "explanation": "To solve for x, first subtract 10 from both sides ($2x = 10$), then divide both sides by 2 ($x = 5$).",
+    "category": "Math",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 6,
+    "question": "Who painted the Mona Lisa?",
+    "options": {
+      "A": "Vincent van Gogh",
+      "B": "Pablo Picasso",
+      "C": "Leonardo da Vinci",
+      "D": "Michelangelo"
+    },
+    "answer": "C",
+    "explanation": "The Mona Lisa is a world-famous portrait painted by the Italian Renaissance artist Leonardo da Vinci.",
+    "category": "Art",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 7,
+    "question": "What does 'CPU' stand for in computing?",
+    "options": {
+      "A": "Central Processing Unit",
+      "B": "Computer Personal Unit",
+      "C": "Central Power Unit",
+      "D": "Computer Processing Utility"
+    },
+    "answer": "A",
+    "explanation": "The CPU is the primary component of a computer that executes instructions. It's often referred to as the 'brain' of the computer.",
+    "category": "Technology",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 8,
+    "question": "Which planet is known as the Red Planet?",
+    "options": {
+      "A": "Venus",
+      "B": "Mars",
+      "C": "Jupiter",
+      "D": "Saturn"
+    },
+    "answer": "B",
+    "explanation": "Mars is called the Red Planet because of its reddish appearance, which is due to iron oxide (rust) on its surface.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 9,
+    "question": "Who wrote the novel 'Pride and Prejudice'?",
+    "options": {
+      "A": "Mary Shelley",
+      "B": "Charlotte Brontë",
+      "C": "Jane Austen",
+      "D": "George Eliot"
+    },
+    "answer": "C",
+    "explanation": "Jane Austen, an English novelist, is celebrated for her romantic fiction, including the classic novel 'Pride and Prejudice'.",
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 10,
+    "question": "What is the term for a loan used to purchase a home or other real estate?",
+    "options": {
+      "A": "Lease",
+      "B": "Mortgage",
+      "C": "Annuity",
+      "D": "Stock"
+    },
+    "answer": "B",
+    "explanation": "A mortgage is a loan provided by a bank or lender that helps a person purchase a property. The property itself serves as collateral for the loan.",
+    "category": "Life Skills",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 11,
+    "question": "The Great Barrier Reef is located off the coast of which country?",
+    "options": {
+      "A": "South Africa",
+      "B": "Brazil",
+      "C": "Australia",
+      "D": "Thailand"
+    },
+    "answer": "C",
+    "explanation": "The Great Barrier Reef, the world's largest coral reef system, is located in the Coral Sea, off the coast of Queensland, Australia.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 12,
+    "question": "What is the hardest natural substance on Earth?",
+    "options": {
+      "A": "Gold",
+      "B": "Iron",
+      "C": "Quartz",
+      "D": "Diamond"
+    },
+    "answer": "D",
+    "explanation": "Diamond is the hardest known natural material, ranking 10 on the Mohs scale of hardness. It is a solid form of carbon.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 13,
+    "question": "What does the 'AI' in 'ChatGPT' and other AI models stand for?",
+    "options": {
+      "A": "Automated Intelligence",
+      "B": "Algorithmic Interpreter",
+      "C": "Artificial Intelligence",
+      "D": "Advanced Interface"
+    },
+    "answer": "C",
+    "explanation": "AI stands for Artificial Intelligence, a branch of computer science dedicated to creating systems that can perform tasks that typically require human intelligence.",
+    "category": "AI",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 14,
+    "question": "The ancient Roman city of Pompeii was famously destroyed by the eruption of which volcano?",
+    "options": {
+      "A": "Mount Etna",
+      "B": "Mount Fuji",
+      "C": "Mount Vesuvius",
+      "D": "Mount St. Helens"
+    },
+    "answer": "C",
+    "explanation": "In AD 79, Mount Vesuvius erupted, burying the Roman city of Pompeii under a thick layer of volcanic ash and preserving it for centuries.",
+    "category": "History",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 15,
+    "question": "What is the square root of 144?",
+    "options": {
+      "A": "10",
+      "B": "12",
+      "C": "14",
+      "D": "16"
+    },
+    "answer": "B",
+    "explanation": "The square root of 144 is 12, because $12 \\times 12 = 144$.",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 16,
+    "question": "Which artist is known for co-founding the Cubist movement?",
+    "options": {
+      "A": "Salvador Dalí",
+      "B": "Claude Monet",
+      "C": "Pablo Picasso",
+      "D": "Andy Warhol"
+    },
+    "answer": "C",
+    "explanation": "Pablo Picasso, along with Georges Braque, was a pioneer of Cubism, an early-20th-century avant-garde art movement that revolutionized European painting and sculpture.",
+    "category": "Art",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 17,
+    "question": "What type of computer memory is volatile, meaning its contents are lost when the power is turned off?",
+    "options": {
+      "A": "SSD",
+      "B": "ROM",
+      "C": "Hard Drive",
+      "D": "RAM"
+    },
+    "answer": "D",
+    "explanation": "RAM (Random Access Memory) is volatile memory used by the CPU to store data that is actively being used. When the computer is shut down, the data in RAM is cleared.",
+    "category": "Technology",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 18,
+    "question": "What is the chemical symbol for gold?",
+    "options": {
+      "A": "Ag",
+      "B": "Au",
+      "C": "Go",
+      "D": "Gd"
+    },
+    "answer": "B",
+    "explanation": "The chemical symbol for gold is Au, which comes from the Latin word for gold, 'aurum'.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 19,
+    "question": "In Greek mythology, who was the god of the sea?",
+    "options": {
+      "A": "Zeus",
+      "B": "Hades",
+      "C": "Apollo",
+      "D": "Poseidon"
+    },
+    "answer": "D",
+    "explanation": "Poseidon was one of the twelve Olympians in ancient Greek religion and myth. He was the god of the Sea and other waters, of earthquakes, and of horses.",
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 20,
+    "question": "I have cities, but no houses. I have mountains, but no trees. I have water, but no fish. What am I?",
+    "options": {
+      "A": "A dream",
+      "B": "A book",
+      "C": "A map",
+      "D": "A photograph"
+    },
+    "answer": "C",
+    "explanation": "This is a classic riddle. A map depicts geographical features like cities, mountains, and bodies of water symbolically, without the actual objects being present.",
+    "category": "Logic",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 21,
+    "question": "Which country is both in Europe and Asia?",
+    "options": {
+      "A": "Egypt",
+      "B": "Turkey",
+      "C": "Iran",
+      "D": "Greece"
+    },
+    "answer": "B",
+    "explanation": "Turkey is a transcontinental country, with a small portion of its territory (Thrace) in Southeast Europe and the larger portion (Anatolia) in Western Asia.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 22,
+    "question": "Which US President is featured on the one-dollar bill?",
+    "options": {
+      "A": "Abraham Lincoln",
+      "B": "Thomas Jefferson",
+      "C": "George Washington",
+      "D": "Andrew Jackson"
+    },
+    "answer": "C",
+    "explanation": "George Washington, the first President of the United States, is depicted on the obverse of the one-dollar bill.",
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 23,
+    "question": "Which pop star is known as the 'Queen of Pop'?",
+    "options": {
+      "A": "Beyoncé",
+      "B": "Taylor Swift",
+      "C": "Lady Gaga",
+      "D": "Madonna"
+    },
+    "answer": "D",
+    "explanation": "Madonna has been referred to as the 'Queen of Pop' since the 1980s due to her immense commercial success and influence on music and culture.",
+    "category": "Pop Culture",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 24,
+    "question": "What is the process of breaking down food in the body to create energy?",
+    "options": {
+      "A": "Respiration",
+      "B": "Circulation",
+      "C": "Metabolism",
+      "D": "Digestion"
+    },
+    "answer": "C",
+    "explanation": "Metabolism refers to all the chemical reactions in the body's cells that convert food into energy needed to power everything we do.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 25,
+    "question": "A pentagon is a polygon with how many sides?",
+    "options": {
+      "A": "5",
+      "B": "6",
+      "C": "7",
+      "D": "8"
+    },
+    "answer": "A",
+    "explanation": "A pentagon is a five-sided polygon. The prefix 'penta-' is Greek for five.",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 26,
+    "question": "The first successful airplane was invented by which pair of brothers?",
+    "options": {
+      "A": "The Grimm Brothers",
+      "B": "The Wright Brothers",
+      "C": "The Lumière Brothers",
+      "D": "The Warner Brothers"
+    },
+    "answer": "B",
+    "explanation": "Orville and Wilbur Wright, known as the Wright brothers, were American aviation pioneers credited with inventing and building the world's first successful motor-operated airplane.",
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 27,
+    "question": "In the context of AI, what is a 'neural network' designed to mimic?",
+    "options": {
+      "A": "A social network",
+      "B": "The human brain",
+      "C": "A computer's motherboard",
+      "D": "A spider's web"
+    },
+    "answer": "B",
+    "explanation": "Artificial neural networks are computing systems inspired by the biological neural networks that constitute animal brains. They are a key tool in machine learning.",
+    "category": "AI",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 28,
+    "question": "What is the largest bone in the human body?",
+    "options": {
+      "A": "Humerus",
+      "B": "Tibia",
+      "C": "Femur",
+      "D": "Scapula"
+    },
+    "answer": "C",
+    "explanation": "The femur, or thigh bone, is the longest, heaviest, and strongest bone in the human body.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 29,
+    "question": "What does 'https' at the beginning of a URL indicate?",
+    "options": {
+      "A": "The website is highly rated.",
+      "B": "The website has super-fast speed.",
+      "C": "The connection is secure.",
+      "D": "The site is for subscribers only."
+    },
+    "answer": "C",
+    "explanation": "HTTPS stands for Hypertext Transfer Protocol Secure. It means the data sent between your browser and the website is encrypted, making it safe from eavesdroppers.",
+    "category": "Technology",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 30,
+    "question": "What is the primary ingredient in guacamole?",
+    "options": {
+      "A": "Tomato",
+      "B": "Avocado",
+      "C": "Onion",
+      "D": "Lime"
+    },
+    "answer": "B",
+    "explanation": "Guacamole is an avocado-based dip, spread, or salad first developed in Mexico. The main ingredient is mashed ripe avocados.",
+    "category": "Life Skills",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 31,
+    "question": "Which desert is the largest hot desert in the world?",
+    "options": {
+      "A": "Gobi Desert",
+      "B": "Arabian Desert",
+      "C": "Kalahari Desert",
+      "D": "Sahara Desert"
+    },
+    "answer": "D",
+    "explanation": "The Sahara Desert, covering most of North Africa, is the largest hot desert in the world. The two largest deserts overall are the polar deserts of Antarctica and the Arctic.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 32,
+    "question": "What is the name of the wizard in 'The Hobbit' and 'The Lord of the Rings'?",
+    "options": {
+      "A": "Dumbledore",
+      "B": "Merlin",
+      "C": "Gandalf",
+      "D": "Voldemort"
+    },
+    "answer": "C",
+    "explanation": "Gandalf is a central character in J.R.R. Tolkien's novels, acting as a guide and mentor to the protagonists.",
+    "category": "Literature",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 33,
+    "question": "What is the boiling point of water at sea level?",
+    "options": {
+      "A": "90°C (194°F)",
+      "B": "100°C (212°F)",
+      "C": "110°C (230°F)",
+      "D": "120°C (248°F)"
+    },
+    "answer": "B",
+    "explanation": "Water boils at 100 degrees Celsius (212 degrees Fahrenheit) at standard atmospheric pressure (sea level).",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 34,
+    "question": "The 'Starry Night' is a famous painting by which artist?",
+    "options": {
+      "A": "Edvard Munch",
+      "B": "Vincent van Gogh",
+      "C": "Claude Monet",
+      "D": "Rembrandt"
+    },
+    "answer": "B",
+    "explanation": "'The Starry Night' is an oil-on-canvas painting by the Dutch Post-Impressionist painter Vincent van Gogh, created in 1889.",
+    "category": "Art",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 35,
+    "question": "If you are facing north and turn 90 degrees clockwise, which direction are you now facing?",
+    "options": {
+      "A": "East",
+      "B": "South",
+      "C": "West",
+      "D": "North"
+    },
+    "answer": "A",
+    "explanation": "A clockwise turn of 90 degrees from North will point you directly East. The cardinal directions in order are North, East, South, West.",
+    "category": "Logic",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 36,
+    "question": "The historical period of 'The Renaissance' is best known for a revival in what?",
+    "options": {
+      "A": "Military Strategy",
+      "B": "Agriculture",
+      "C": "Art and Learning",
+      "D": "Exploration"
+    },
+    "answer": "C",
+    "explanation": "The Renaissance was a period of vigorous artistic, cultural, and intellectual activity, marking a 'rebirth' of classical art and learning from ancient Greece and Rome.",
+    "category": "History",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 37,
+    "question": "What is the area of a rectangle with a length of 10 units and a width of 5 units?",
+    "options": {
+      "A": "15 square units",
+      "B": "30 square units",
+      "C": "50 square units",
+      "D": "100 square units"
+    },
+    "answer": "C",
+    "explanation": "The area of a rectangle is calculated by multiplying its length by its width. In this case, $10 \\times 5 = 50$ square units.",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 38,
+    "question": "Which video game franchise features a plumber named Mario?",
+    "options": {
+      "A": "The Legend of Zelda",
+      "B": "Sonic the Hedgehog",
+      "C": "Super Mario",
+      "D": "Pokémon"
+    },
+    "answer": "C",
+    "explanation": "Mario, the iconic plumber, is the main character in Nintendo's 'Super Mario' franchise, one of the best-selling video game series of all time.",
+    "category": "Pop Culture",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 39,
+    "question": "Which layer of the Earth's atmosphere is closest to the surface?",
+    "options": {
+      "A": "Stratosphere",
+      "B": "Mesosphere",
+      "C": "Thermosphere",
+      "D": "Troposphere"
+    },
+    "answer": "D",
+    "explanation": "The troposphere is the lowest layer of Earth's atmosphere, extending from the surface up to about 12 kilometers. Most weather occurs in this layer.",
+    "category": "Science",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 40,
+    "question": "What is the name for an algorithm used by search engines to rank webpages in their search results?",
+    "options": {
+      "A": "PageRank",
+      "B": "WebSort",
+      "C": "LinkList",
+      "D": "NetScore"
+    },
+    "answer": "A",
+    "explanation": "PageRank is a well-known algorithm, originally developed by Google's founders, that helps determine a webpage's importance by looking at the quantity and quality of links to it.",
+    "category": "Technology",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 41,
+    "question": "Mount Kilimanjaro, the highest peak in Africa, is located in which country?",
+    "options": {
+      "A": "Kenya",
+      "B": "Tanzania",
+      "C": "Ethiopia",
+      "D": "Uganda"
+    },
+    "answer": "B",
+    "explanation": "Mount Kilimanjaro is a dormant volcano in Tanzania. It is the highest mountain in Africa and the highest single free-standing mountain in the world.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 42,
+    "question": "Who was the first woman to fly solo across the Atlantic Ocean?",
+    "options": {
+      "A": "Bessie Coleman",
+      "B": "Harriet Quimby",
+      "C": "Amelia Earhart",
+      "D": "Jacqueline Cochran"
+    },
+    "answer": "C",
+    "explanation": "In 1932, Amelia Earhart became the first female aviator to fly solo across the Atlantic Ocean, a feat that brought her international fame.",
+    "category": "History",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 43,
+    "question": "What does the term 'phishing' refer to in cybersecurity?",
+    "options": {
+      "A": "A method to cool down computer hardware.",
+      "B": "A type of computer virus.",
+      "C": "A fraudulent attempt to obtain sensitive information.",
+      "D": "A way to secure a wireless network."
+    },
+    "answer": "C",
+    "explanation": "Phishing is a cyberattack where attackers, disguised as a trustworthy entity, try to trick people into revealing sensitive information like usernames, passwords, and credit card details.",
+    "category": "Technology",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 44,
+    "question": "Which of these is NOT a primary color of light?",
+    "options": {
+      "A": "Red",
+      "B": "Green",
+      "C": "Blue",
+      "D": "Yellow"
+    },
+    "answer": "D",
+    "explanation": "The primary colors of light (the additive primaries) are Red, Green, and Blue (RGB). Mixing them creates other colors, including white. Yellow is a primary color in pigment (subtractive color model).",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 45,
+    "question": "In the 'Harry Potter' series, what is the name of the school of witchcraft and wizardry?",
+    "options": {
+      "A": "Beauxbatons",
+      "B": "Durmstrang",
+      "C": "Hogwarts",
+      "D": "Ilvermorny"
+    },
+    "answer": "C",
+    "explanation": "Hogwarts School of Witchcraft and Wizardry is the main setting for the first six books in J.K. Rowling's Harry Potter series.",
+    "category": "Literature",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 46,
+    "question": "What is the concept of 'compound interest'?",
+    "options": {
+      "A": "Interest calculated only on the principal amount.",
+      "B": "A very difficult math problem.",
+      "C": "Interest calculated on the initial principal and also on the accumulated interest.",
+      "D": "A one-time fee for a loan."
+    },
+    "answer": "C",
+    "explanation": "Compound interest is 'interest on interest.' It makes a sum of money grow at a faster rate than simple interest because you earn returns on both your initial investment and on the interest it has already earned.",
+    "category": "Life Skills",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 47,
+    "question": "What number does the Roman numeral 'X' represent?",
+    "options": {
+      "A": "5",
+      "B": "10",
+      "C": "50",
+      "D": "100"
+    },
+    "answer": "B",
+    "explanation": "In the Roman numeral system, X = 10, V = 5, L = 50, C = 100, D = 500, and M = 1000.",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 48,
+    "question": "Which band performed the iconic song 'Bohemian Rhapsody'?",
+    "options": {
+      "A": "The Beatles",
+      "B": "Led Zeppelin",
+      "C": "Queen",
+      "D": "Pink Floyd"
+    },
+    "answer": "C",
+    "explanation": "'Bohemian Rhapsody' is a song by the British rock band Queen, written by Freddie Mercury for the band's 1975 album 'A Night at the Opera'.",
+    "category": "Pop Culture",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 49,
+    "question": "What is the capital of Australia?",
+    "options": {
+      "A": "Sydney",
+      "B": "Melbourne",
+      "C": "Canberra",
+      "D": "Perth"
+    },
+    "answer": "C",
+    "explanation": "While Sydney and Melbourne are larger and more famous cities, Canberra was chosen as the capital of Australia in 1908 as a compromise between the two rivals.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 50,
+    "question": "Which element on the periodic table has the atomic number 1?",
+    "options": {
+      "A": "Helium",
+      "B": "Oxygen",
+      "C": "Lithium",
+      "D": "Hydrogen"
+    },
+    "answer": "D",
+    "explanation": "Hydrogen (H) is the first element on the periodic table, with an atomic number of 1, meaning it has one proton in its nucleus.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 51,
+    "question": "The art style of Surrealism is best known for what kind of imagery?",
+    "options": {
+      "A": "Perfectly realistic landscapes.",
+      "B": "Abstract shapes and colors.",
+      "C": "Dream-like and bizarre scenes.",
+      "D": "Portraits of royalty."
+    },
+    "answer": "C",
+    "explanation": "Surrealism, championed by artists like Salvador Dalí, sought to unlock the power of the unconscious mind, resulting in illogical scenes and strange, dream-like visuals.",
+    "category": "Art",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 52,
+    "question": "What was the first feature-length animated film ever released?",
+    "options": {
+      "A": "Pinocchio",
+      "B": "Snow White and the Seven Dwarfs",
+      "C": "Fantasia",
+      "D": "Bambi"
+    },
+    "answer": "B",
+    "explanation": "Walt Disney's 'Snow White and the Seven Dwarfs', released in 1937, was the first full-length cel-animated feature film and a pioneering achievement in cinema.",
+    "category": "Pop Culture",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 53,
+    "question": "What do you call a word that is spelled the same forwards and backwards?",
+    "options": {
+      "A": "Synonym",
+      "B": "Antonym",
+      "C": "Palindrome",
+      "D": "Onomatopoeia"
+    },
+    "answer": "C",
+    "explanation": "A palindrome is a word, phrase, or sequence that reads the same backwards as forwards, such as 'madam', 'level', or 'racecar'.",
+    "category": "Logic",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 54,
+    "question": "What is the main function of a computer's firewall?",
+    "options": {
+      "A": "To increase internet speed.",
+      "B": "To monitor and control incoming and outgoing network traffic.",
+      "C": "To cool the CPU.",
+      "D": "To store backup files."
+    },
+    "answer": "B",
+    "explanation": "A firewall acts as a barrier between a trusted network (like your home network) and an untrusted network (like the internet), blocking unauthorized access while permitting outward communication.",
+    "category": "Technology",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 55,
+    "question": "The ancient wonder, the Great Pyramid of Giza, was built as a tomb for which pharaoh?",
+    "options": {
+      "A": "Tutankhamun",
+      "B": "Ramesses II",
+      "C": "Khufu",
+      "D": "Cleopatra"
+    },
+    "answer": "C",
+    "explanation": "The Great Pyramid of Giza, the largest of the Egyptian pyramids, was built as a tomb for the Fourth Dynasty Egyptian pharaoh Khufu over a 20-year period.",
+    "category": "History",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 56,
+    "question": "What is the term for a system of government in which the priests rule in the name of God or a god?",
+    "options": {
+      "A": "Democracy",
+      "B": "Plutocracy",
+      "C": "Oligarchy",
+      "D": "Theocracy"
+    },
+    "answer": "D",
+    "explanation": "A theocracy is a form of government in which a deity is the source from which all authority derives. The term comes from the Greek 'theokratia', meaning 'rule of God'.",
+    "category": "History",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 57,
+    "question": "In AI, what does 'NLP' stand for?",
+    "options": {
+      "A": "Neural Logic Programming",
+      "B": "Natural Language Processing",
+      "C": "Network Layer Protocol",
+      "D": "Non-linear Programming"
+    },
+    "answer": "B",
+    "explanation": "Natural Language Processing (NLP) is a subfield of AI focused on enabling computers to understand, interpret, and generate human language.",
+    "category": "AI",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 58,
+    "question": "What is the currency of Switzerland?",
+    "options": {
+      "A": "Euro",
+      "B": "Pound",
+      "C": "Franc",
+      "D": "Krone"
+    },
+    "answer": "C",
+    "explanation": "The Swiss franc (CHF) is the official currency and legal tender of Switzerland and Liechtenstein.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 59,
+    "question": "What is the main purpose of the myelin sheath around a neuron?",
+    "options": {
+      "A": "To store nutrients for the cell.",
+      "B": "To produce neurotransmitters.",
+      "C": "To speed up nerve impulse transmission.",
+      "D": "To fight off infections."
+    },
+    "answer": "C",
+    "explanation": "The myelin sheath is an insulating layer that forms around nerves. It allows electrical impulses to transmit quickly and efficiently along the nerve cells.",
+    "category": "Science",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 60,
+    "question": "The circumference of a circle is given by the formula $2 \\pi r$. What does 'r' represent?",
+    "options": {
+      "A": "The rotation",
+      "B": "The radius",
+      "C": "The ratio",
+      "D": "The radian"
+    },
+    "answer": "B",
+    "explanation": "In the formula for the circumference of a circle, 'r' stands for the radius, which is the distance from the center of the circle to any point on its edge.",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 61,
+    "question": "Which author created the famous detective Sherlock Holmes?",
+    "options": {
+      "A": "Agatha Christie",
+      "B": "Arthur Conan Doyle",
+      "C": "Edgar Allan Poe",
+      "D": "Jules Verne"
+    },
+    "answer": "B",
+    "explanation": "Sir Arthur Conan Doyle was a British writer who created the character of Sherlock Holmes, a brilliant consulting detective known for his logical reasoning.",
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 62,
+    "question": "What is the recommended first step in providing first aid to a person with a minor burn?",
+    "options": {
+      "A": "Apply butter or oil to the burn.",
+      "B": "Cover the burn with a thick blanket.",
+      "C": "Cool the burn with cool or lukewarm running water.",
+      "D": "Pop any blisters that have formed."
+    },
+    "answer": "C",
+    "explanation": "Immediately cooling the burn under cool running water for about 20 minutes helps to reduce pain, swelling, and the risk of scarring. Applying oils or popping blisters can cause infection.",
+    "category": "Life Skills",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 63,
+    "question": "Which river flows through Paris?",
+    "options": {
+      "A": "The Thames",
+      "B": "The Danube",
+      "C": "The Rhine",
+      "D": "The Seine"
+    },
+    "answer": "D",
+    "explanation": "The River Seine flows through the heart of Paris and is one of the city's most iconic features, with many landmarks located along its banks.",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 64,
+    "question": "The video game 'Minecraft' primarily involves what activity?",
+    "options": {
+      "A": "Racing cars",
+      "B": "Solving puzzles",
+      "C": "Building with blocks",
+      "D": "Playing sports"
+    },
+    "answer": "C",
+    "explanation": "Minecraft is a sandbox video game where players explore a blocky, 3D world, and can mine resources to build structures and craft items.",
+    "category": "Pop Culture",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 65,
+    "question": "What does a '404 error' on a website signify?",
+    "options": {
+      "A": "The server is busy.",
+      "B": "The payment failed.",
+      "C": "The user is not authorized.",
+      "D": "The requested page was not found."
+    },
+    "answer": "D",
+    "explanation": "A 404 Not Found error is a standard HTTP status code indicating that the server could not find the requested webpage. It's one of the most common errors on the web.",
+    "category": "Technology",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 66,
+    "question": "Who was the first person to step on the Moon?",
+    "options": {
+      "A": "Buzz Aldrin",
+      "B": "Yuri Gagarin",
+      "C": "Neil Armstrong",
+      "D": "Michael Collins"
+    },
+    "answer": "C",
+    "explanation": "On July 20, 1969, American astronaut Neil Armstrong became the first human to step on the lunar surface, famously saying, 'That's one small step for man, one giant leap for mankind.'",
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 67,
+    "question": "What is the scientific study of earthquakes called?",
+    "options": {
+      "A": "Meteorology",
+      "B": "Seismology",
+      "C": "Volcanology",
+      "D": "Geology"
+    },
+    "answer": "B",
+    "explanation": "Seismology is the scientific study of earthquakes and the propagation of elastic waves (seismic waves) through the Earth.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 68,
+    "question": "In a standard deck of 52 playing cards, how many queens are there?",
+    "options": {
+      "A": "2",
+      "B": "4",
+      "C": "8",
+      "D": "12"
+    },
+    "answer": "B",
+    "explanation": "A standard deck has four suits (hearts, diamonds, clubs, spades), and each suit contains one queen, for a total of four queens.",
+    "category": "Logic",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 69,
+    "question": "A 'Turing Test' is used to measure a machine's ability to do what?",
+    "options": {
+      "A": "Solve complex mathematical problems.",
+      "B": "Exhibit intelligent behavior equivalent to a human.",
+      "C": "Translate languages accurately.",
+      "D": "Run for a long time without errors."
+    },
+    "answer": "B",
+    "explanation": "Proposed by Alan Turing, the Turing Test is a test of a machine's ability to exhibit intelligent behavior indistinguishable from that of a human.",
+    "category": "AI",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 70,
+    "question": "What is the name of the galaxy that contains our Solar System?",
+    "options": {
+      "A": "Andromeda Galaxy",
+      "B": "Triangulum Galaxy",
+      "C": "Milky Way Galaxy",
+      "D": "Whirlpool Galaxy"
+    },
+    "answer": "C",
+    "explanation": "Our Solar System, including Earth, is located in the Milky Way, a barred spiral galaxy estimated to contain 100–400 billion stars.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 71,
+    "question": "What is the main purpose of bees in an ecosystem?",
+    "options": {
+      "A": "To produce honey",
+      "B": "To pollinate plants",
+      "C": "To serve as food for birds",
+      "D": "To build complex hives"
+    },
+    "answer": "B",
+    "explanation": "While they do produce honey, the most critical role of bees is pollination, which is vital for the reproduction of many flowering plants, including numerous food crops.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 72,
+    "question": "Which of the following is an example of a renewable energy source?",
+    "options": {
+      "A": "Natural Gas",
+      "B": "Coal",
+      "C": "Wind",
+      "D": "Petroleum"
+    },
+    "answer": "C",
+    "explanation": "Wind is a renewable resource because it is naturally replenished. Fossil fuels like coal, oil, and natural gas are non-renewable because they take millions of years to form.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 73,
+    "question": "What is the Pythagorean theorem used to find in a right-angled triangle?",
+    "options": {
+      "A": "The area",
+      "B": "The perimeter",
+      "C": "The length of an unknown side",
+      "D": "The angles"
+    },
+    "answer": "C",
+    "explanation": "The Pythagorean theorem states that in a right-angled triangle, the square of the hypotenuse (the side opposite the right angle) is equal to the sum of the squares of the other two sides ($a^2 + b^2 = c^2$).",
+    "category": "Math",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 74,
+    "question": "Which country is famous for its tulips and windmills?",
+    "options": {
+      "A": "Belgium",
+      "B": "Denmark",
+      "C": "The Netherlands",
+      "D": "Germany"
+    },
+    "answer": "C",
+    "explanation": "The Netherlands is world-renowned for its iconic windmills and vast, colorful fields of tulips, particularly in the Keukenhof gardens.",
+    "category": "Geography",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 75,
+    "question": "The fictional city of Gotham is the primary setting for which superhero's stories?",
+    "options": {
+      "A": "Superman",
+      "B": "Spider-Man",
+      "C": "Wonder Woman",
+      "D": "Batman"
+    },
+    "answer": "D",
+    "explanation": "Gotham City is the dark, gritty home of Bruce Wayne, also known as the vigilante Batman, in the DC Comics universe.",
+    "category": "Pop Culture",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 76,
+    "question": "Which body of water separates Africa from Europe?",
+    "options": {
+      "A": "The Red Sea",
+      "B": "The Black Sea",
+      "C": "The Mediterranean Sea",
+      "D": "The Atlantic Ocean"
+    },
+    "answer": "C",
+    "explanation": "The Mediterranean Sea is a large sea connected to the Atlantic Ocean, surrounded by the Mediterranean Basin and almost completely enclosed by land: on the north by Southern Europe and Anatolia, on the south by North Africa.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 77,
+    "question": "What is the primary function of white blood cells?",
+    "options": {
+      "A": "To carry oxygen",
+      "B": "To help blood clot",
+      "C": "To fight infection",
+      "D": "To carry nutrients"
+    },
+    "answer": "C",
+    "explanation": "White blood cells (leukocytes) are a key part of the body's immune system, helping to fight off infections and other diseases.",
+    "category": "Science",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 78,
+    "question": "Who directed the classic 1993 film 'Jurassic Park'?",
+    "options": {
+      "A": "James Cameron",
+      "B": "George Lucas",
+      "C": "Steven Spielberg",
+      "D": "Christopher Nolan"
+    },
+    "answer": "C",
+    "explanation": "Steven Spielberg directed the science fiction action film 'Jurassic Park', which is based on the novel by Michael Crichton and acclaimed for its groundbreaking special effects.",
+    "category": "Pop Culture",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 79,
+    "question": "What does the acronym 'scuba' stand for?",
+    "options": {
+      "A": "Sub-aquatic controlled utility breathing apparatus",
+      "B": "Self-contained underwater breathing apparatus",
+      "C": "Surface-controlled underwater breathing aid",
+      "D": "Safety-certified underwater breathing application"
+    },
+    "answer": "B",
+    "explanation": "SCUBA is an acronym for 'Self-Contained Underwater Breathing Apparatus', which allows divers to breathe underwater without being connected to a surface air supply.",
+    "category": "Life Skills",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 80,
+    "question": "The Berlin Wall, a symbol of the Cold War, fell in what year?",
+    "options": {
+      "A": "1985",
+      "B": "1989",
+      "C": "1991",
+      "D": "1993"
+    },
+    "answer": "B",
+    "explanation": "The fall of the Berlin Wall on November 9, 1989, was a pivotal event in world history that marked the beginning of the end of the Cold War and led to German reunification.",
+    "category": "History",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 81,
+    "question": "If a farmer has 17 sheep and all but 9 die, how many are left?",
+    "options": {
+      "A": "8",
+      "B": "9",
+      "C": "17",
+      "D": "26"
+    },
+    "answer": "B",
+    "explanation": "This is a classic riddle that plays on wording. 'All but 9' means that 9 sheep are the ones that survived.",
+    "category": "Logic",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 82,
+    "question": "Which programming language is commonly used for developing Android apps?",
+    "options": {
+      "A": "Swift",
+      "B": "Kotlin",
+      "C": "C#",
+      "D": "Ruby"
+    },
+    "answer": "B",
+    "explanation": "While Java was traditionally used, Kotlin is now Google's official and preferred language for Android app development due to its modern features and conciseness.",
+    "category": "Technology",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 83,
+    "question": "Which of these is not one of the Seven Wonders of the Ancient World?",
+    "options": {
+      "A": "The Great Pyramid of Giza",
+      "B": "The Colosseum",
+      "C": "The Hanging Gardens of Babylon",
+      "D": "The Lighthouse of Alexandria"
+    },
+    "answer": "B",
+    "explanation": "The Colosseum in Rome is a wonder of the medieval world, not one of the original Seven Wonders of the Ancient World. The Great Pyramid is the only ancient wonder still standing.",
+    "category": "History",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 84,
+    "question": "In the human eye, what is the colored part called?",
+    "options": {
+      "A": "Pupil",
+      "B": "Sclera",
+      "C": "Retina",
+      "D": "Iris"
+    },
+    "answer": "D",
+    "explanation": "The iris is the thin, circular structure in the eye, responsible for controlling the diameter and size of the pupil and thus the amount of light reaching the retina. Its pigment determines eye color.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 85,
+    "question": "What is the name of the 'blue bird' logo for the social media company Twitter (now X)?",
+    "options": {
+      "A": "Jack",
+      "B": "Tweety",
+      "C": "Larry",
+      "D": "Chirp"
+    },
+    "answer": "C",
+    "explanation": "The iconic blue bird logo used by Twitter for many years was officially named 'Larry the Bird' in honor of basketball legend Larry Bird.",
+    "category": "Pop Culture",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 86,
+    "question": "What is the name of the strait that separates North America from Asia?",
+    "options": {
+      "A": "Strait of Hormuz",
+      "B": "Strait of Gibraltar",
+      "C": "Bering Strait",
+      "D": "Strait of Malacca"
+    },
+    "answer": "C",
+    "explanation": "The Bering Strait is a waterway that separates Russia (Asia) from the United States (Alaska, North America).",
+    "category": "Geography",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 87,
+    "question": "What is the common term for a 'balanced diet'?",
+    "options": {
+      "A": "Eating only fruits and vegetables.",
+      "B": "Eating a wide variety of foods in the right proportions.",
+      "C": "Avoiding all fats and sugars.",
+      "D": "Eating three large meals a day."
+    },
+    "answer": "B",
+    "explanation": "A balanced diet involves consuming a variety of foods from all major food groups to provide the body with the essential nutrients, vitamins, and minerals it needs to function properly.",
+    "category": "Life Skills",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 88,
+    "question": "Which artist is famous for creating 'The Thinker' sculpture?",
+    "options": {
+      "A": "Donatello",
+      "B": "Auguste Rodin",
+      "C": "Michelangelo",
+      "D": "Bernini"
+    },
+    "answer": "B",
+    "explanation": "'The Thinker' is a bronze sculpture by Auguste Rodin, usually placed on a stone pedestal. The work shows a nude male figure of heroic size sitting on a rock with his chin resting on one hand as though deep in thought.",
+    "category": "Art",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 89,
+    "question": "What is the term for a type of AI that can only perform a specific task, such as a language translation AI?",
+    "options": {
+      "A": "Artificial General Intelligence (AGI)",
+      "B": "Artificial Superintelligence (ASI)",
+      "C": "Reactive Machine AI",
+      "D": "Artificial Narrow Intelligence (ANI)"
+    },
+    "answer": "D",
+    "explanation": "Artificial Narrow Intelligence (ANI), also known as Weak AI, refers to AI systems designed and trained for a particular task. Most modern AI systems are forms of ANI.",
+    "category": "AI",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 90,
+    "question": "What is the value of Pi ($pi$) to two decimal places?",
+    "options": {
+      "A": "3.12",
+      "B": "3.14",
+      "C": "3.16",
+      "D": "3.18"
+    },
+    "answer": "B",
+    "explanation": "Pi ($pi$) is a mathematical constant representing the ratio of a circle's circumference to its diameter, approximately equal to 3.14159. To two decimal places, it is 3.14.",
+    "category": "Math",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 91,
+    "question": "In Shakespeare's 'Romeo and Juliet', which family does Juliet belong to?",
+    "options": {
+      "A": "Montague",
+      "B": "Capulet",
+      "C": "Verona",
+      "D": "Escalus"
+    },
+    "answer": "B",
+    "explanation": "The play centers on the feud between two prominent families in Verona: the Montagues (Romeo's family) and the Capulets (Juliet's family).",
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 92,
+    "question": "What does a Geiger counter measure?",
+    "options": {
+      "A": "Air pressure",
+      "B": "Sound levels",
+      "C": "Ionizing radiation",
+      "D": "Humidity"
+    },
+    "answer": "C",
+    "explanation": "A Geiger counter is an instrument used for detecting and measuring ionizing radiation, such as alpha particles, beta particles, and gamma rays.",
+    "category": "Science",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 93,
+    "question": "What is the world's most spoken language by number of native speakers?",
+    "options": {
+      "A": "English",
+      "B": "Hindi",
+      "C": "Spanish",
+      "D": "Mandarin Chinese"
+    },
+    "answer": "D",
+    "explanation": "Mandarin Chinese has the highest number of native speakers in the world. English is the most widely spoken language overall when including both native and non-native speakers.",
+    "category": "Geography",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 94,
+    "question": "Which of these is a 'logic gate' used in digital circuits?",
+    "options": {
+      "A": "The OR Gate",
+      "B": "The IF Gate",
+      "C": "The THEN Gate",
+      "D": "The BECAUSE Gate"
+    },
+    "answer": "A",
+    "explanation": "In electronics, logic gates (like AND, OR, NOT, XOR) are basic building blocks of a digital circuit that perform a logical operation on one or more binary inputs to produce a single binary output.",
+    "category": "Technology",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 95,
+    "question": "Which country gifted the Statue of Liberty to the United States?",
+    "options": {
+      "A": "United Kingdom",
+      "B": "Germany",
+      "C": "France",
+      "D": "Spain"
+    },
+    "answer": "C",
+    "explanation": "The Statue of Liberty was a gift of friendship from the people of France to the people of the United States and was dedicated on October 28, 1886.",
+    "category": "History",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 96,
+    "question": "Which of the following is NOT an insect?",
+    "options": {
+      "A": "Ant",
+      "B": "Bee",
+      "C": "Spider",
+      "D": "Beetle"
+    },
+    "answer": "C",
+    "explanation": "Spiders are arachnids, not insects. A key difference is that insects have six legs, while arachnids have eight legs.",
+    "category": "Science",
+    "difficulty": "Easy"
+  },
+  {
+    "id": 97,
+    "question": "What does the 'gig' in 'gig economy' refer to?",
+    "options": {
+      "A": "A unit of computer memory (gigabyte)",
+      "B": "A type of musical performance",
+      "C": "A short-term or freelance job",
+      "D": "A large corporation"
+    },
+    "answer": "C",
+    "explanation": "The term 'gig' in 'gig economy' is borrowed from musicians and refers to a single project or task for which a worker is hired, often on a freelance or temporary basis.",
+    "category": "Life Skills",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 98,
+    "question": "The book 'The Hitchhiker's Guide to the Galaxy' famously states that the answer to the 'ultimate question of life, the universe, and everything' is what number?",
+    "options": {
+      "A": "24",
+      "B": "42",
+      "C": "101",
+      "D": "7"
+    },
+    "answer": "B",
+    "explanation": "In Douglas Adams's comedic science fiction series, the supercomputer Deep Thought calculates for 7.5 million years to find that the answer is 42, though the ultimate question itself is unknown.",
+    "category": "Literature",
+    "difficulty": "Medium"
+  },
+  {
+    "id": 99,
+    "question": "If an object has a mass of 10 kg, what is its weight on Earth approximately?",
+    "options": {
+      "A": "10 Newtons",
+      "B": "98 Newtons",
+      "C": "10 Pounds",
+      "D": "9.8 Pounds"
+    },
+    "answer": "B",
+    "explanation": "Weight is the force of gravity on an object ($W = m \\times g$). With mass (m) = 10 kg and Earth's gravity (g) ≈ 9.8 m/s², the weight is approximately $10 \\times 9.8 = 98$ Newtons.",
+    "category": "Science",
+    "difficulty": "Hard"
+  },
+  {
+    "id": 100,
+    "question": "What do the five Olympic rings represent?",
+    "options": {
+      "A": "The five original Olympic sports",
+      "B": "The five largest countries",
+      "C": "The five inhabited continents",
+      "D": "The five core Olympic values"
+    },
+    "answer": "C",
+    "explanation": "The five interlocking rings represent the five inhabited continents that participate in the Olympics: Africa, the Americas, Asia, Europe, and Oceania.",
+    "category": "History",
+    "difficulty": "Medium"
+  }
+]
