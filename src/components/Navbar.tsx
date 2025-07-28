@@ -66,7 +66,7 @@ const Navbar = () => {
 
       {/* Menu contents */}
       <div
-        className={`fixed top-0 right-0 h-screen  w-80 bg-gradient-to-br from-gray-950 via-purple-950 to-slate-900  transform transition-transform duration-300 ease-in-out z-50 shadow-xl ${
+        className={`fixed top-0 right-0 h-screen  w-80 bg-gradient-to-br from-gray-950  to-slate-900  transform transition-transform duration-300 ease-in-out z-50 shadow-xl ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -94,7 +94,7 @@ const Navbar = () => {
               <button
                 key={index}
                 onClick={() => handleMenuItemClick(item.label)}
-                className="w-full flex items-center space-x-4 px-4 py-2 rounded-xl hover:bg-gray-700/50 transition-colors duration-200 text-left group"
+                className="w-full flex items-center space-x-4 px-4 py-2 lg:py-4 rounded-xl hover:bg-gray-700/50 transition-colors duration-200 text-left group"
               >
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">
                   <IconComponent size={20} className="text-white" />
@@ -114,7 +114,7 @@ const Navbar = () => {
         {/* Menu footer */}
         <div className=" p-4 border-t mt-10 border-gray-700">
           <div className="text-center text-gray-500 text-xs">
-            Version 1.0.0 • Made by dikie.dev
+            Version 1.0.0 • Made by dikie
           </div>
         </div>
       </div>

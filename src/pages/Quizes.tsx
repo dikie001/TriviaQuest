@@ -1,26 +1,74 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import AllQuestions from "../assets/quiz_jsons/Quiz_1.json";
 import toast from "react-hot-toast";
+import { getStorage } from "../utils/mini_functions";
 // import { useNavigate } from "react-router-dom";
+const TRIVIA_KEY = "trivia-quest-storage";
 
 type Question = {
   category: string;
   question: string;
   options: Record<string, string>;
-  correct_answer?: string;
   answer?: string;
   explanation?: string;
 };
 
 type Props = {
   selectedCategory: string;
+  setStartQuiz: (value: React.SetStateAction<boolean>) => void;
 };
 
-const Quizes = ({ selectedCategory }: Props) => {
+const Quizes = ({ selectedCategory,setStartQuiz }: Props) => {
   const [currentIndex, setCurrentIndex] = useState<number>(0);
   const [selectedAnswer, setSelectedAnswer] = useState<string | null>(null);
   const [showResult, setShowResult] = useState<boolean>(false);
+  const scoreRef = useRef<number>(0);
+  const indexRef = useRef<number>(0); //for storage purposes only
+  const lastQuestionRef = useRef<boolean>(false)
+
   // const navigate = useNavigate();
+  const trivia: Record<string, any> = {
+    Literature: { current_index: 0, score: 0, done: false },
+    Technology: { current_index: 0, score: 0, done: false },
+    Life_skills: { current_index: 0, score: 0, done: false },
+    Science: { current_index: 0, score: 0, done: false },
+    Geography: { current_index: 0, score: 0, done: false },
+    Math: { current_index: 0, score: 0, done: false },
+    Pop_culture: { current_index: 0, score: 0, done: false },
+    Art: { current_index: 0, score: 0, done: false },
+    AI: { current_index: 0, score: 0, done: false },
+    History: { current_index: 0, score: 0, done: false },
+    Random_quiz: { current_index: 0, score: 0, done: false },
+  };
+
+  useEffect(() => {
+    loadStorage();
+  }, []);
+
+  //load everything from storage
+  const loadStorage = async () => {
+    const loadedData = await getStorage();
+    setCurrentIndex(loadedData[selectedCategory].current_index);
+    indexRef.current = loadedData[selectedCategory].current_index; //for storage purposes only
+  };
+
+  //save currentIndex and score to storage
+  const saveProgress = async () => {
+    // Fetch current data
+    const fetchedData = localStorage.getItem(TRIVIA_KEY);
+    const parsedData = fetchedData ? JSON.parse(fetchedData) : [];
+    // Update to include latest data
+    const updatedData = {
+      ...parsedData,
+      [selectedCategory]: {
+        ...parsedData[selectedCategory],
+        current_index: indexRef.current,
+        score: scoreRef.current,
+        done:lastQuestionRef.current,
+      },
+    };
+    localStorage.setItem(TRIVIA_KEY, JSON.stringify(updatedData));
+  };
 
   // Filter questions by category
   const filteredQuestions = AllQuestions.filter(
@@ -33,13 +81,20 @@ const Quizes = ({ selectedCategory }: Props) => {
 
   // Handle answer selection
   const handleAnswerSelect = (optionKey: string) => {
+    trivia[selectedCategory].current_index = 45;
+
     if (showResult) return;
     setSelectedAnswer(optionKey);
     setShowResult(true);
 
-    const correctAnswer =
-      currentQuestion.answer ;
+    const correctAnswer = currentQuestion.answer;
     const isCorrect = optionKey === correctAnswer;
+
+    if (isCorrect) {
+      scoreRef.current += 1;
+    }
+
+
 
     // Enhanced toast with modern styling
     toast.custom(
@@ -86,9 +141,14 @@ const Quizes = ({ selectedCategory }: Props) => {
   const handleNext = () => {
     if (!isLastQuestion) {
       setCurrentIndex((prev) => prev + 1);
+      indexRef.current += 1;
       setSelectedAnswer(null);
       setShowResult(false);
     }
+    if(isLastQuestion){
+      lastQuestionRef.current = true
+    }
+    saveProgress();
   };
 
   // Navigate to previous question
@@ -103,17 +163,40 @@ const Quizes = ({ selectedCategory }: Props) => {
   if (!hasQuestions) {
     return (
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950">
-        <div className="text-center p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl">
-          <div className="w-16 h-16 mx-auto mb-4 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-            <span className="text-2xl">🤔</span>
-          </div>
+        <div className="text-center py-8 px-4 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl">
+          <span className="text-4xl">🤔</span>
           <h2 className="text-2xl font-bold mb-3 text-white">
             No Questions Found
           </h2>
           <p className="text-slate-300 max-w-sm">
-            No questions available for "{selectedCategory}" category. Try
-            selecting a different category.
+            {selectedCategory} questions are not currently available. Try selecting a different category.
           </p>
+
+          <button
+            onClick={() => setStartQuiz(false)}
+            className="mt-2 cursor-pointer bg-gradient-to-r from-cyan-800 via-blue-800 to-purple-800 py-3 px-6 shadow rounded-xl font-medium text-white active:ring ring-purple-600 "
+          >
+            Categories
+          </button>
+        </div>
+      </div>
+    );
+  }
+  if(isLastQuestion){
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950">
+        <div className="text-center p-8 rounded-3xl bg-white/5 backdrop-blur-xl border border-white/10 shadow-2xl">
+            <span className="text-4xl">🤔</span>
+          <h2 className="text-2xl font-bold mb-3 text-white">
+            No Questions Found
+          </h2>
+          <p className="text-gray-400 max-w-sm text-sm">
+            {selectedCategory} questions are currently not available. Click the button below to select different
+            category.
+          </p>
+          <button onClick={()=>setStartQuiz(false)} className="mt-2 cursor-pointer bg-gradient-to-r from-cyan-800 via-blue-800 to-purple-800 py-3 px-6 shadow rounded-xl font-medium text-white active:ring ring-purple-600 ">
+            Categories
+          </button>
         </div>
       </div>
     );
@@ -126,7 +209,6 @@ const Quizes = ({ selectedCategory }: Props) => {
       <div className="max-w-3xl mx-auto">
         {/* Question Card */}
         <div className="bg-white/5 backdrop-blur-xl rounded-2xl shadow-xl border border-white/10 overflow-hidden">
-    
           {/* Header */}
           <div className="p-4">
             {/* Category Badge */}

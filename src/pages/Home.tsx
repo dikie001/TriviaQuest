@@ -16,18 +16,77 @@ const Home = () => {
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
   // Define categories with more metadata - remove duplicates
-  const categories: Category[] = useMemo(() => [
-    { name: "Literature", icon: "📚", description: "Books, poetry, and authors", color: "from-purple-600 to-purple-800" },
-    { name: "Technology", icon: "💻", description: "Programming, gadgets, and innovation", color: "from-blue-600 to-blue-800" },
-    { name: "Life Skills", icon: "🎯", description: "Practical knowledge for daily life", color: "from-green-600 to-green-800" },
-    { name: "AI", icon: "🤖", description: "Artificial intelligence and machine learning", color: "from-cyan-600 to-cyan-800" },
-    { name: "Science", icon: "🔬", description: "Physics, chemistry, and biology", color: "from-indigo-600 to-indigo-800" },
-    { name: "Geography", icon: "🌍", description: "Countries, capitals, and landmarks", color: "from-emerald-600 to-emerald-800" },
-    { name: "Math", icon: "🔢", description: "Numbers, equations, and problem solving", color: "from-fuchsia-600 to-indigo-900" },
-    { name: "Pop Culture", icon: "🎬", description: "Movies, music, and entertainment", color: "from-pink-600 to-pink-800" },
-    { name: "Art", icon: "🎨", description: "Painting, sculpture, and creativity", color: "from-violet-600 to-cyan-800" },
-    { name: "History", icon: "⏳", description: "Past events and civilizations", color: "from-gray-600 to-gray-800" },
-  ], []);
+  const categories: Category[] = useMemo(
+    () => [
+      {
+        name: "Literature",
+        icon: "📚",
+        description: "Books, poetry, and authors",
+        color: "from-purple-600 to-purple-800",
+      },
+      {
+        name: "Technology",
+        icon: "💻",
+        description: "Programming, gadgets, and innovation",
+        color: "from-blue-600 to-blue-800",
+      },
+      {
+        name: "Life Skills",
+        icon: "🎯",
+        description: "Practical knowledge for daily life",
+        color: "from-green-600 to-green-800",
+      },
+      {
+        name: "AI",
+        icon: "🤖",
+        description: "Artificial intelligence and machine learning",
+        color: "from-cyan-600 to-cyan-800",
+      },
+      {
+        name: "Science",
+        icon: "🔬",
+        description: "Physics, chemistry, and biology",
+        color: "from-indigo-600 to-indigo-800",
+      },
+      {
+        name: "Geography",
+        icon: "🌍",
+        description: "Countries, capitals, and landmarks",
+        color: "from-emerald-600 to-emerald-800",
+      },
+      {
+        name: "Math",
+        icon: "🔢",
+        description: "Numbers, equations, and problem solving",
+        color: "from-fuchsia-600 to-indigo-900",
+      },
+      {
+        name: "Pop Culture",
+        icon: "🎬",
+        description: "Movies, music, and entertainment",
+        color: "from-pink-600 to-pink-800",
+      },
+      {
+        name: "Art",
+        icon: "🎨",
+        description: "Painting, sculpture, and creativity",
+        color: "from-violet-600 to-cyan-800",
+      },
+      {
+        name: "History",
+        icon: "⏳",
+        description: "Past events and civilizations",
+        color: "from-gray-600 to-gray-800",
+      },
+      {
+        name: "Random quiz",
+        icon: "",
+        description: "Random quizes from random topics",
+        color: "from-green-600 to-blue-800",
+      },
+    ],
+    []
+  );
 
   // Handle category selection
   const handleCategorySelect = (categoryName: string) => {
@@ -47,10 +106,11 @@ const Home = () => {
       <div className="min-h-screen bg-gray-950">
         <Navbar />
         {/* Back button */}
-        <div className="fixed top-20 left-4 z-10">
-      
-        </div>
-        <Quizes selectedCategory={selectedCategory}  />
+        <div className="fixed top-20 left-4 z-10"></div>
+        <Quizes
+          selectedCategory={selectedCategory}
+          setStartQuiz={setStartQuiz}
+        />
       </div>
     );
   }
@@ -76,8 +136,8 @@ const Home = () => {
         </p>
 
         {/* Stats bar */}
-        <div className="flex justify-center mt-4 lg:mt-8">
-          <div className="bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl px-4 lg:px-8 py-4">
+        <div className="flex justify-center  mt-2 lg:mt-8 px-4">
+          <div className="bg-white/5 max-w-xl backdrop-blur-xl border border-white/10 rounded-2xl px-4 w-full lg:px-8 py-4 flex items-center justify-center">
             <div className="flex items-center gap-2 md:gap-4 lg:gap-8 text-sm">
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">
