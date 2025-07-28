@@ -11,26 +11,59 @@ import {
   Info,
 } from "lucide-react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
-const Navbar = () => {
+interface Props {
+  onClick?: () => void;
+  onCategoryClick?: () => void;
+  pageName?: string;
+}
+
+const Navbar = ({ onClick, onCategoryClick, pageName }: Props) => {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
+  const navigate = useNavigate();
 
   const menuItems = [
     {
       icon: Play,
       label: "Quick Play",
       description: "Start a random trivia game",
+      to: "/",
     },
-    { icon: BookOpen, label: "Categories", description: "Choose your topic" },
-    { icon: BarChart3, label: "Statistics", description: "Your game stats" },
-    { icon: Settings, label: "Settings", description: "Game preferences" },
-
-    { icon: Info, label: "About", description: "App information" },
+    {
+      icon: BookOpen,
+      label: "Categories",
+      description: "Choose your topic",
+      to: "/",
+    },
+    {
+      icon: BarChart3,
+      label: "Statistics",
+      description: "Your game stats",
+      to: "/stats",
+    },
+    {
+      icon: Settings,
+      label: "Settings",
+      description: "Game preferences",
+      to: "/settings",
+    },
+    {
+      icon: Info,
+      label: "About",
+      description: "App information",
+      to: "/about",
+    },
   ];
 
   const handleMenuItemClick = (label: string) => {
-    console.log(`Clicked: ${label}`);
     setMenuOpen(false);
+    if (label === "Quick Play") {
+      onClick();
+    }
+    if (label === "Categories") {
+      onCategoryClick();
+    }
   };
 
   return (
@@ -40,7 +73,7 @@ const Navbar = () => {
           <Trophy size={20} className="text-white" />
         </div>
         <h1 className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent text-2xl font-bold lg:text-3xl">
-          TriviaQuest
+          {pageName}
         </h1>
       </div>
 
@@ -78,8 +111,9 @@ const Navbar = () => {
                 <Trophy size={24} className="text-white" />
               </div>
               <div>
-        <h1 className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent text-2xl font-bold lg:text-3xl">
-                  TriviaQuest</h1>
+                <h1 className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-600 bg-clip-text text-transparent text-2xl font-bold lg:text-3xl">
+                  TriviaQuest
+                </h1>
                 <p className="text-gray-400 text-sm">Test your knowledge!</p>
               </div>
             </div>
@@ -93,7 +127,10 @@ const Navbar = () => {
             return (
               <button
                 key={index}
-                onClick={() => handleMenuItemClick(item.label)}
+                onClick={() => {
+                  navigate(item.to);
+                  handleMenuItemClick(item.label);
+                }}
                 className="w-full flex items-center space-x-4 px-4 py-2 lg:py-4 rounded-xl hover:bg-gray-700/50 transition-colors duration-200 text-left group"
               >
                 <div className="w-10 h-10 bg-white/10 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform duration-200">

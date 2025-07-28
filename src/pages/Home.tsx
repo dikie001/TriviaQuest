@@ -12,7 +12,7 @@ interface Category {
 
 const Home = () => {
   const [startQuiz, setStartQuiz] = useState<boolean>(false);
-  const [selectedCategory, setSelectedCategory] = useState<string>('');
+  const [selectedCategory, setSelectedCategory] = useState<string>("");
   const [hoveredCategory, setHoveredCategory] = useState<string | null>(null);
 
   // Define categories with more metadata - remove duplicates
@@ -97,14 +97,23 @@ const Home = () => {
   // Handle back to categories
   const handleBackToCategories = () => {
     setStartQuiz(false);
-    setSelectedCategory('');
+    setSelectedCategory("");
   };
 
   // If quiz is started, show quiz component
   if (startQuiz && selectedCategory) {
     return (
       <div className="min-h-screen bg-gray-950">
-        <Navbar />
+        <Navbar
+          pageName={"QuizQuest"}
+          // For Random quiz button
+          onClick={() => setSelectedCategory("Random quiz")}
+          // For category button
+          onCategoryClick={() => {
+            setStartQuiz(false);
+            setSelectedCategory("");
+          }}
+        />
         {/* Back button */}
         <div className="fixed top-20 left-4 z-10"></div>
         <Quizes
@@ -117,10 +126,20 @@ const Home = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950">
-      <Navbar />
+      <Navbar
+        pageName={"QuizQuest"}
+        // For Random quiz button
+        onClick={() => {
+          setSelectedCategory("Random quiz");
+          setStartQuiz(true);
+        }}
+        // For category button
+        onCategoryClick={() => {
+          setStartQuiz(false);
+          setSelectedCategory("");
+        }}
+      />
       <div className="text-center mb-6">
-   
-
         <h1 className="text-6xl md:text-7xl font-black mb-2 lg:mb-6 leading-tight pt-16">
           <span className="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
             Quiz
@@ -161,7 +180,6 @@ const Home = () => {
       </div>
 
       <div className="px-4  pb-8 max-w-4xl mx-auto">
-       
         {/* Categories grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {categories.map((category, index) => (
