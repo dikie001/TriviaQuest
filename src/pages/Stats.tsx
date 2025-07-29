@@ -1,18 +1,17 @@
 import {
-    Award,
-    Brain,
-    Flame,
-    Star,
-    Target,
-    TrendingUp,
-    Zap
+  Award,
+  Brain,
+  Flame,
+  Star,
+  Target,
+  TrendingUp,
+  Zap,
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
 import { getStorage } from "../utils/mini_functions";
 
 export default function Stats() {
-  const [literatureScore, setLiteratureScore] = useState(0);
   const [statsData, setStatsData] = useState({
     totalQuizzes: 0,
     averageScore: 0,
@@ -25,7 +24,7 @@ export default function Stats() {
       {
         name: "Literature",
         quizzes: 12,
-        avgScore: literatureScore,
+        avgScore: 0,
         color: "from-blue-500 to-purple-600",
       },
       {
@@ -42,7 +41,7 @@ export default function Stats() {
       },
       {
         name: "AI",
-        quizzes: 7,    
+        quizzes: 7,
         avgScore: 85,
         color: "from-pink-500 to-rose-600",
       },
@@ -116,7 +115,11 @@ export default function Stats() {
     );
 
     const avScore = Number(((totalScore / quizzesDone) * 100).toFixed(0));
-    setStatsData((prev) => ({ ...prev, averageScore: avScore }));
+    if (Number.isNaN(avScore) || avScore === undefined || avScore === null) {
+      setStatsData((prev) => ({ ...prev, averageScore: 0 }));
+    } else {
+      setStatsData((prev) => ({ ...prev, averageScore: avScore }));
+    }
     // 003
     //calculate the best score
     const scores = loadedArray.map((item: any) => item.score);
@@ -141,11 +144,47 @@ export default function Stats() {
     setStatsData((prev) => ({ ...prev, totalPoints: allScores }));
 
     //   Load and calculate topic scores, percentages, progress etc
-    setLiteratureScore(
-      (loadedData.Literature.score / loadedData.Literature.current_index) * 100
+    //001 Literature stuff
+    const literatureAverage = Number(
+      (
+        (loadedData.Literature.score / loadedData.Literature.current_index) *
+        100
+      ).toFixed(0)
     );
-    statsData.topics[0].avgScore = literatureScore
+    statsData.topics[0].avgScore = literatureAverage;
+
+    // Number of quizess in literature
+    const literatureQizzes: number = loadedData.Literature.current_index;
+    statsData.topics[0].quizzes = literatureQizzes;
+
+    // 002 Technology stuff
+    const technologyAverage = Number(
+      (
+        (loadedData.Technology.score / loadedData.Technology.current_index) *
+        100
+      ).toFixed(0)
+    );
+    statsData.topics[1].avgScore = technologyAverage;
+
+    // Number of quizess in literature
+    const technologyQizzes: number = loadedData.Technology.current_index;
+    statsData.topics[1].quizzes = technologyQizzes;
+
+    // 003 LifeSkills stuff
+    const lifeSkillsAverage = Number(
+      (
+        (loadedData.Life_skills.score / loadedData.Life_skills.current_index) *
+        100
+      ).toFixed(0)
+    );
+    statsData.topics[2].avgScore = lifeSkillsAverage;
+
+    // Number of quizess in literature
+    const LifeSkillsQizzes: number = loadedData.Life_skills.current_index;
+    statsData.topics[2].quizzes = LifeSkillsQizzes;
+    console.log(loadedData)
   };
+  
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-950 via-slate-900 to-gray-950">

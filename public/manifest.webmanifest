@@ -20,22 +20,5 @@
       "type": "image/png",
       "purpose": "any maskable"
     }
-  ],
-  "lang": "en",
-  "dir": "ltr",
-  "categories": ["games", "trivia", "education"],
-  "screenshots": [
-    {
-      "src": "/screenshots/screen1.png",
-      "type": "image/png",
-      "sizes": "1080x1920"
-    },
-    {
-      "src": "/screenshots/screen2.png",
-      "type": "image/png",
-      "sizes": "1080x1920"
-    }
-  ],
-  "related_applications": [],
-  "prefer_related_applications": false
+  ]
 }

@@ -152,7 +152,7 @@ const Home = () => {
         {/* Stats bar */}
         <div className="flex justify-center  mt-2 lg:mt-8 px-4">
           <div className="bg-white/5 max-w-xl backdrop-blur-xl border border-white/10 rounded-2xl px-4 w-full lg:px-8 py-4 flex items-center justify-center">
-            <div className="flex items-center gap-2 md:gap-4 lg:gap-8 text-sm">
+            <div className="flex items-center gap-2 md:gap-6 lg:gap-8 text-sm">
               <div className="text-center">
                 <div className="text-2xl font-bold text-white">
                   {categories.length}

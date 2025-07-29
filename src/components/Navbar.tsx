@@ -5,8 +5,7 @@ import {
   Menu,
   Play,
   Settings,
-  Trophy,
-  X,
+  Trophy
 } from "lucide-react";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
@@ -47,7 +46,7 @@ const Navbar = ({ onClick, onCategoryClick, pageName }: Props) => {
     {
       icon: Settings,
       label: "Settings",
-      iconStyle:"animate-spin",
+      iconStyle: "animate-spin",
       description: "Game preferences",
       to: "/settings",
       color: "from-orange-800 to-red-950 ",
@@ -68,7 +67,7 @@ const Navbar = ({ onClick, onCategoryClick, pageName }: Props) => {
   };
 
   return (
-    <div className="justify-between items-center px-6 flex h-16 fixed z-50 w-full backdrop-blur-xl shadow-xl">
+    <div className={`justify-between items-center px-6 flex h-18 fixed z-50 w-full backdrop-blur-xl shadow-xl`}>
       {/* Brand Section */}
       <div className="flex items-center space-x-3">
         <div className="w-10 h-10 bg-gradient-to-br from-cyan-800 to-purple-950 rounded-xl flex items-center justify-center shadow-lg">
@@ -82,13 +81,9 @@ const Navbar = ({ onClick, onCategoryClick, pageName }: Props) => {
       {/* Menu Toggle Button */}
       <button
         onClick={() => setMenuOpen(!menuOpen)}
-        className="p-2 rounded-xl bg-white/5 hover:bg-white/20 border border-white/5 shadow-lg"
+        className="p-2 rounded-xl   hover:bg-white/10  shadow-lg"
       >
-        {menuOpen ? (
-          <X size={22} className="text-white" />
-        ) : (
-          <Menu size={22} className="text-white" />
-        )}
+        <Menu size={22} className="text-white" />
       </button>
 
       {/* Overlay */}
@@ -101,7 +96,7 @@ const Navbar = ({ onClick, onCategoryClick, pageName }: Props) => {
 
       {/* Side Menu */}
       <div
-        className={`fixed top-0 right-0 h-screen w-75 lg:w-100 bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950 border-l border-white/10 z-50 shadow-2xl ${
+        className={`fixed top-0 right-0 h-screen w-75 lg:w-100 bg-gradient-to-br from-slate-950 via-gray-900 to-slate-950 border-l border-white/10 z-50 shadow-xl ${
           menuOpen ? "translate-x-0" : "translate-x-full"
         } transition-transform duration-300 ease-out`}
       >
@@ -139,7 +134,10 @@ const Navbar = ({ onClick, onCategoryClick, pageName }: Props) => {
                 <div
                   className={`w-12 h-12 bg-gradient-to-br ${item.color} rounded-xl flex items-center justify-center shadow-md group-hover:shadow-lg`}
                 >
-                  <IconComponent size={22} className={`${item.iconStyle} text-white`} />
+                  <IconComponent
+                    size={22}
+                    className={`${item.iconStyle} text-white`}
+                  />
                 </div>
 
                 {/* Text Content */}
