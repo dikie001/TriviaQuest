@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import { useMemo, useState } from "react";
 import Navbar from "../components/Navbar";
 import Quizes from "./Quizes";
 
@@ -22,7 +22,7 @@ const Home = () => {
         name: "Literature",
         icon: "📚",
         description: "Books, poetry, and authors",
-        color: "from-purple-600 to-purple-800",
+        color: "from-blue-500 to-purple-600",
       },
       {
         name: "Technology",
@@ -94,11 +94,6 @@ const Home = () => {
     setStartQuiz(true);
   };
 
-  // Handle back to categories
-  const handleBackToCategories = () => {
-    setStartQuiz(false);
-    setSelectedCategory("");
-  };
 
   // If quiz is started, show quiz component
   if (startQuiz && selectedCategory) {
@@ -140,7 +135,7 @@ const Home = () => {
         }}
       />
       <div className="text-center mb-6">
-        <h1 className="text-6xl md:text-7xl font-black mb-2 lg:mb-6 leading-tight pt-16">
+        <h1 className="text-5xl md:text-6xl font-black mb-2 lg:mb-4 leading-tight pt-16">
           <span className="bg-gradient-to-r from-white via-gray-100 to-gray-300 bg-clip-text text-transparent">
             Quiz
           </span>
@@ -150,7 +145,7 @@ const Home = () => {
           </span>
         </h1>
 
-        <p className="text-xl text-gray-400 font-medium">
+        <p className=" text-gray-400 font-medium">
           Choose your category and test your knowledge
         </p>
 
@@ -182,21 +177,20 @@ const Home = () => {
       <div className="px-4  pb-8 max-w-4xl mx-auto">
         {/* Categories grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          {categories.map((category, index) => (
+          {categories.map((category) => (
             <div
               key={category.name}
-              className={`group relative overflow-hidden rounded-xl cursor-pointer 
-                transform transition-all duration-300 hover:scale-105 hover:shadow-2xl
-                bg-gradient-to-br ${category.color} p-1`}
+              className="group relative bg-gradient-to-br from-gray-800/60 to-gray-900/60 backdrop-blur-sm rounded-3xl p-6 border border-gray-700/50 hover:border-gray-600/50 transition-all duration-300 hover:scale-105"
               onClick={() => handleCategorySelect(category.name)}
               onMouseEnter={() => setHoveredCategory(category.name)}
               onMouseLeave={() => setHoveredCategory(null)}
             >
               {/* Inner content container */}
               <div
-                className="bg-gray-900/80 backdrop-blur-sm rounded-lg p-4 h-full 
-                transition-all duration-300 group-hover:bg-gray-900/60"
-              >
+                className={`absolute inset-0 bg-gradient-to-br ${category.color} opacity-10 rounded-3xl group-hover:opacity-20 transition-opacity duration-300`}
+              ></div>
+                <div className="relative z-10">
+    
                 {/* Category icon */}
                 <div
                   className="text-3xl mb-1 lg:mb-3 transform transition-transform duration-300 

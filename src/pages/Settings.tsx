@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Settings, Moon, Volume2, RotateCcw, Trash2 } from "lucide-react";
+import { Moon, RotateCcw, Trash2, Volume2 } from "lucide-react";
+import { useState } from "react";
 import Navbar from "../components/Navbar";
 
 export default function SettingsPage() {

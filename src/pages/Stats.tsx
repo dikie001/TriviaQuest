@@ -1,75 +1,150 @@
-import React, { useState } from "react";
 import {
-  Trophy,
-  Target,
-  TrendingUp,
-  Brain,
-  Star,
-  Award,
-  Zap,
-  Flame,
+    Award,
+    Brain,
+    Flame,
+    Star,
+    Target,
+    TrendingUp,
+    Zap
 } from "lucide-react";
+import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
+import { getStorage } from "../utils/mini_functions";
 
 export default function Stats() {
-  // Dummy data - in real app this would come from localStorage
-  const [statsData] = useState({
-    totalQuizzes: 47,
-    averageScore: 78,
-    bestScore: 95,
+  const [literatureScore, setLiteratureScore] = useState(0);
+  const [statsData, setStatsData] = useState({
+    totalQuizzes: 0,
+    averageScore: 0,
+    bestScore: 0,
     streak: 12,
-    perfectScores: 6,
-    totalPoints: 3672,
+    bestScoreName: "",
+    perfectScores: 0,
+    totalPoints: 0,
     topics: [
       {
-        name: "Science",
+        name: "Literature",
         quizzes: 12,
-        avgScore: 82,
-        bestScore: 95,
+        avgScore: literatureScore,
         color: "from-blue-500 to-purple-600",
       },
       {
-        name: "History",
+        name: "Technology",
         quizzes: 8,
         avgScore: 75,
-        bestScore: 88,
-        color: "from-amber-500 to-orange-600",
+        color: "from-blue-600 to-blue-800",
       },
       {
-        name: "Sports",
+        name: "Life Skills",
         quizzes: 15,
         avgScore: 71,
-        bestScore: 92,
         color: "from-green-500 to-emerald-600",
       },
       {
-        name: "Movies",
-        quizzes: 7,
+        name: "AI",
+        quizzes: 7,    
         avgScore: 85,
-        bestScore: 94,
         color: "from-pink-500 to-rose-600",
       },
       {
-        name: "Geography",
+        name: "Science",
         quizzes: 5,
         avgScore: 68,
-        bestScore: 81,
         color: "from-cyan-500 to-blue-600",
       },
       {
-        name: "Music",
+        name: "Math",
         quizzes: 9,
         avgScore: 79,
-        bestScore: 89,
         color: "from-violet-500 to-purple-600",
+      },
+
+      {
+        name: "Pop Culture",
+        quizzes: 9,
+        avgScore: 79,
+        color: "from-pink-600 to-pink-800",
+      },
+      {
+        name: "Art",
+        quizzes: 9,
+        avgScore: 79,
+        color: "from-violet-600 to-cyan-800",
+      },
+      {
+        name: "History",
+        quizzes: 9,
+        avgScore: 79,
+        color: "from-gray-600 to-gray-800",
+      },
+      {
+        name: "Random Quiz",
+        quizzes: 9,
+        avgScore: 79,
+        color: "from-green-600 to-blue-800",
       },
     ],
   });
 
-  const getScoreColor = (score:number) => {
+  const getScoreColor = (score: number) => {
     if (score >= 90) return "text-green-400";
     if (score >= 75) return "text-yellow-400";
     return "text-red-400";
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []);
+
+  const loadData = async () => {
+    const loadedData = await getStorage();
+    const loadedArray = Object.values(loadedData);
+    //  001
+    // calculate the total quizes done
+    const quizzesDone = Object.values(loadedData).reduce(
+      (sum: number, obj: any) => sum + (obj.current_index ?? 0),
+      0
+    );
+    statsData.totalQuizzes = quizzesDone;
+    setStatsData((prev) => ({ ...prev, totalQuizzes: quizzesDone }));
+    // 002
+    // Calculate the average score
+    const quizzesStarted = loadedArray.filter((items: any) => items.score > 0);
+    const totalScore = quizzesStarted.reduce(
+      (sum: number, obj: any) => sum + (obj.score ?? 0),
+      0
+    );
+
+    const avScore = Number(((totalScore / quizzesDone) * 100).toFixed(0));
+    setStatsData((prev) => ({ ...prev, averageScore: avScore }));
+    // 003
+    //calculate the best score
+    const scores = loadedArray.map((item: any) => item.score);
+    const maxScore = Math.max(...scores);
+    const maxScoreArray: any = loadedArray.filter(
+      (item: any) => item.score === maxScore
+    );
+    const maxScoreIndex = maxScoreArray[0].current_index;
+
+    const best = Number(((maxScore / maxScoreIndex) * 100).toFixed(0));
+    setStatsData((prev) => ({ ...prev, bestScore: best }));
+    // 004
+    // Get the perfect scores for the cetegories
+    const perfectOnes = loadedArray.filter(
+      (item: any) =>
+        item.current_index === item.score && item.current_index !== 0
+    );
+    setStatsData((prev) => ({ ...prev, perfectScores: perfectOnes.length }));
+    //005
+    // Get the points * 10
+    const allScores = scores.reduce((sum, arr) => sum + arr) * 10;
+    setStatsData((prev) => ({ ...prev, totalPoints: allScores }));
+
+    //   Load and calculate topic scores, percentages, progress etc
+    setLiteratureScore(
+      (loadedData.Literature.score / loadedData.Literature.current_index) * 100
+    );
+    statsData.topics[0].avgScore = literatureScore
   };
 
   return (
@@ -78,7 +153,6 @@ export default function Stats() {
       <div className="max-w-3xl mx-auto px-4 py-6 pt-14">
         {/* Header */}
         <div className="text-center mb-4 mt-6">
-     
           <h1 className="text-3xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent mb-1">
             Current Stats
           </h1>
@@ -117,6 +191,10 @@ export default function Stats() {
             <p className="text-3xl font-bold text-yellow-400">
               {statsData.bestScore}%
             </p>
+            {/* 
+            <div className="absolute  flex  left-2 text-orange-300 text-xs">
+              <Dot className="text-green-400 " size={20} /> {"hel"}
+            </div> */}
           </div>
 
           <div className="bg-gradient-to-br from-gray-800/80 to-gray-900/80 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50">
@@ -154,7 +232,9 @@ export default function Stats() {
         <div className="mb-8">
           <div className="flex items-center gap-3 mb-4">
             <Brain className="w-8 h-8 text-purple-400" />
-            <h2 className="text-2xl text-white md:text-3xl font-bold">Topic Mastery</h2>
+            <h2 className="text-2xl text-white md:text-3xl font-bold">
+              Topic Mastery
+            </h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -199,17 +279,6 @@ export default function Stats() {
                         className={`h-3 bg-gradient-to-r ${topic.color} rounded-full transition-all duration-500`}
                         style={{ width: `${topic.avgScore}%` }}
                       ></div>
-                    </div>
-
-                    <div className="flex justify-between items-center">
-                      <span className="text-gray-400 text-sm">Best</span>
-                      <span
-                        className={`font-bold ${getScoreColor(
-                          topic.bestScore
-                        )}`}
-                      >
-                        {topic.bestScore}%
-                      </span>
                     </div>
                   </div>
                 </div>
